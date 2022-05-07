@@ -1,0 +1,70 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    /* Header/Navigation */
+    
+    .help-faq {
+        height: 30px;
+        background-color: #f8f8f8;
+        ;
+    }
+    
+    .nav1 {
+        background-color: #2d2d2d;
+        height: 65px;
+    }
+    
+    .nav2 {
+        background-color: #525050;
+        height: 45px
+    }
+    
+    .navbar-brand {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.2rem;
+        margin-left: 8%;
+        letter-spacing: 1px;
+        color: white;
+    }
+    
+    .flex-container {
+        display: flex;
+        width: 100%;
+        height: 7vh;
+    }
+    
+    .color-green {
+        background-color: #9cf0e0;
+        flex: 50%;
+    }
+    
+    .color-red {
+        background-color: #ff385c;
+        flex: 50%;
+    }
+    
+    .flex-container2 {
+        margin-top: 0.07%;
+        display: flex;
+        width: 100%;
+        height: 20vh;
+        background: rgb(39, 225, 103);
+        background: linear-gradient(318deg, rgba(39, 225, 103, 1) 20%, rgba(138, 237, 206, 1) 86%);
+    }
+    /* body code */
+    
+    .body-cont {
+        min-height: calc(100vh - 65px - 45px - 7vh - 20vh - 180px);
+    }
+    /* footer-section */
+    
+    .footer-sec {
+        height: 200px;
+        background-color: #eeeeee;
+    }
+    
+    .footer-sec2 {
+        height: 50px;
+        background-color: #dddddd;
+    }

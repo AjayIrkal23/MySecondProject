@@ -298,8 +298,8 @@
     
     .hover-text-g {
         position: absolute;
-        top: 26%;
-        left: 5%;
+        top: 200px;
+        left: 150px;
         width: 40%;
         font-size: 0.7rem;
         background-color: rgb(255, 255, 255);
@@ -328,8 +328,8 @@
     
     .hover-text-r {
         position: absolute;
-        top: 26%;
-        right: 5%;
+        top: 200px;
+        right: 150px;
         width: 40%;
         font-size: 0.7rem;
         background-color: rgb(255, 255, 255);

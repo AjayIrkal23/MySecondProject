@@ -273,7 +273,7 @@
     .flex-container {
         display: flex;
         width: 100%;
-        height: 52.5px;
+        text-align: center;
     }
     
     .color-green {
@@ -286,13 +286,104 @@
         flex: 50%;
     }
     
+    .green-tittle {
+        margin-bottom: 0;
+        letter-spacing: 0.8px;
+        font-family: 'Acme', sans-serif;
+        font-size: 1rem;
+        word-spacing: 5px;
+        line-height: 1.1;
+        transition: opacity .8s ease;
+    }
+    
+    .hover-text-g {
+        position: absolute;
+        top: 26%;
+        left: 5%;
+        width: 40%;
+        font-size: 0.7rem;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        visibility: hidden;
+        z-index: 1;
+    }
+    
+    .color-green:hover .hover-text-g {
+        visibility: visible;
+    }
+    
+    .green-tittle:hover {
+        opacity: 30%;
+    }
+    
+    .red-tittle {
+        margin-bottom: 0;
+        letter-spacing: 0.8px;
+        font-family: 'Acme', sans-serif;
+        font-size: 1rem;
+        word-spacing: 5px;
+        line-height: 1.1;
+        transition: opacity .8s ease;
+    }
+    
+    .hover-text-r {
+        position: absolute;
+        top: 26%;
+        right: 5%;
+        width: 40%;
+        font-size: 0.7rem;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        visibility: hidden;
+        z-index: 1;
+    }
+    
+    .color-red:hover .hover-text-r {
+        visibility: visible;
+    }
+    
+    .red-tittle:hover {
+        opacity: 30%;
+    }
+    
     .flex-container2 {
-        margin-top: 0.07%;
+        margin-top: 0.05%;
         display: flex;
         width: 100%;
-        height: 20vh;
         background: rgb(39, 225, 103);
         background: linear-gradient(150deg, rgba(39, 225, 103, 1) 50%, rgba(138, 237, 206, 1) 86%);
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .main-tittle {
+        margin-top: 5%;
+        margin-bottom: 0;
+        letter-spacing: 0.8px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.8rem;
+        word-spacing: 5px;
+        line-height: 1.1;
+    }
+    
+    .main-tittle:hover {
+        transform: scale(1.15);
+    }
+    
+    .subtittle {
+        margin-top: 1.5%;
+        margin-bottom: 0;
+        letter-spacing: 0.8px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        word-spacing: 5px;
+        line-height: 1.05;
+    }
+    
+    .tnc {
+        margin-top: 3%;
+        font-size: 0.8rem;
     }
     /* body code */
     

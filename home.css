@@ -71,7 +71,78 @@
         align-items: center;
         justify-content: center;
         border-right: 0.5px solid #505050;
-        ;
+    }
+    
+    .account {
+        margin: 0 40%;
+    }
+    
+    .head:hover {
+        color: rgb(51, 185, 218);
+    }
+    
+    .collapse {
+        position: absolute;
+        top: 12%;
+        right: 5%;
+        z-index: 1;
+    }
+    
+    .log-signup span a {
+        color: #525050;
+        margin: 0 2.5%;
+        font-size: 0.9rem;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    .log-signup span a:hover {
+        color: #0770cf
+    }
+    
+    .card-body {
+        padding: 0;
+    }
+    
+    .log-signup {
+        margin-bottom: 0;
+        color: #525050;
+    }
+    
+    .card-tittle {
+        background-color: #dbdbdb;
+        padding: 4.5% 0;
+    }
+    
+    .body {
+        margin: 0 2.5%;
+    }
+    
+    .body .fa-user {
+        margin-top: 2.5%;
+        color: black;
+    }
+    
+    .collapse {
+        width: 20%;
+        margin-left: 72%;
+    }
+    
+    .fa-user {
+        color: white;
+        font-size: 1.3rem;
+        margin-right: 3%;
+    }
+    
+    .fa-heart {
+        color: white;
+        font-size: 1.3rem;
+        margin-right: 2%;
+    }
+    
+    .fa-cart-shopping {
+        color: white;
+        font-size: 1.3rem;
+        margin-right: 3%;
     }
     
     .women:active {
@@ -86,6 +157,63 @@
     .searchbar {
         width: 50%;
         margin-left: 1%;
+    }
+    
+    .myaccount {
+        margin-bottom: 0;
+        margin-top: 2%;
+    }
+    
+    .fa-box {
+        font-size: 1.3rem;
+        margin-right: 3%;
+    }
+    
+    .fa-circle-question {
+        font-size: 1.3rem;
+        margin-right: 3%;
+    }
+    
+    .fa-rocketchat {
+        font-size: 1.3rem;
+        margin-right: 3%;
+    }
+    
+    .myorder {
+        margin-bottom: 0;
+        margin-top: 6%;
+    }
+    
+    .myaccount a {
+        text-decoration: none;
+        margin-left: 3%;
+        font-family: 'Cairo', sans-serif;
+        color: black;
+        font-size: 0.92rem;
+    }
+    
+    .myorder a {
+        text-decoration: none;
+        margin-left: 3%;
+        font-family: 'Cairo', sans-serif;
+        color: black;
+        font-size: 0.92rem;
+    }
+    
+    .last-item {
+        margin-bottom: 5%;
+    }
+    
+    .myorder a:hover {
+        color: #0770cf
+    }
+    
+    .body .myaccount a:hover {
+        color: #0770cf
+    }
+    
+    .user2:hover {
+        color: #0770cf
     }
     
     .search {
@@ -107,13 +235,45 @@
     
     .nav2 {
         background-color: #525050;
-        height: 45px
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 7%;
+        font-family: 'Cairo', sans-serif;
+        color: white;
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+        padding-top: 0.05%;
+    }
+    
+    .nav2 .items {
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+    
+    .nav2 p {
+        margin-bottom: 0;
+        text-align: center;
+        padding: 1.05% 0;
+    }
+    
+    .red {
+        background-color: #d01345;
+        transform: skew(-12.5deg);
+    }
+    
+    .nav2 p:hover {
+        background-color: white;
+        color: black;
+        transform: skew(0deg);
     }
     
     .flex-container {
         display: flex;
         width: 100%;
-        height: 7vh;
+        height: 52.5px;
     }
     
     .color-green {
@@ -132,7 +292,7 @@
         width: 100%;
         height: 20vh;
         background: rgb(39, 225, 103);
-        background: linear-gradient(318deg, rgba(39, 225, 103, 1) 20%, rgba(138, 237, 206, 1) 86%);
+        background: linear-gradient(150deg, rgba(39, 225, 103, 1) 50%, rgba(138, 237, 206, 1) 86%);
     }
     /* body code */
     

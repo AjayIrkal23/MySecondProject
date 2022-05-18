@@ -445,7 +445,44 @@
         text-decoration: none;
     }
     
-    .col4 {}
+    .new-menu .col1 {
+        border-right: 1px solid #dfdfdf;
+        margin-right: 2%;
+    }
+    
+    .newin .hot-menu-col {
+        min-width: 20%;
+    }
+    
+    .col-item {
+        margin-right: 50px;
+        margin-top: 20px;
+    }
+    
+    .col-item1 {
+        margin-top: 0;
+    }
+    
+    .new-col .new-background {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-size: cover;
+        border: 1px rgb(208, 208, 208) solid;
+        display: block;
+    }
+    
+    .new-background:hover {
+        border: 2px solid #0770cf;
+    }
+    
+    .new-col div p {
+        text-align: center;
+    }
+    
+    .new-row2 {
+        border-right: 1px solid #dfdfdf;
+    }
     /* navgiation 2  code closing */
     /* Navigation 3 code starting */
     

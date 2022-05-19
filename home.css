@@ -2,6 +2,10 @@
         margin: 0;
         padding: 0;
     }
+    
+    .menu {
+        cursor: pointer;
+    }
     /* Header/Navigation */
     
     .help-faq {
@@ -298,14 +302,48 @@
         visibility: visible;
     }
     
-    .item-sec .menu {}
+    .shoes:hover .menu {
+        visibility: visible;
+    }
+    
+    .sports:hover .menu {
+        visibility: visible
+    }
+    
+    .accessories:hover .menu {
+        visibility: visible
+    }
+    
+    .tn:hover .menu {
+        visibility: visible
+    }
     
     .newin .menu {
         left: -45px;
     }
     
     .item-sec .menu {
-        left: -100px
+        left: -100px;
+    }
+    
+    .dresses .menu {
+        left: -200px;
+    }
+    
+    .shoes .menu {
+        left: -250px;
+    }
+    
+    .sports .menu {
+        left: -330px;
+    }
+    
+    .accessories .menu {
+        left: -440px;
+    }
+    
+    .tn .menu {
+        left: -550px;
     }
     
     .menu-tittle {
@@ -541,6 +579,57 @@
         margin-right: 2%;
         border-right: 1px solid #dfdfdf;
         padding-right: 5%;
+    }
+    
+    .dresses .col2 {
+        margin-right: 2%;
+        border-right: 1px solid #dfdfdf;
+        padding-right: 5%;
+    }
+    
+    .dresses:hover .menu {
+        visibility: visible;
+    }
+    
+    .dresses .new-tittle {
+        color: rgb(1, 31, 29);
+    }
+    
+    .dresses .col3 .a .background-image:hover {
+        border: 2px double #0770cf;
+    }
+    
+    .shoes .new-tittle {
+        color: black;
+    }
+    
+    .shoes .col1 {
+        margin-right: 3%;
+    }
+    
+    .sports .img-text-div img {
+        margin-right: 10px;
+        width: 70%;
+    }
+    
+    .sports .col1 {
+        margin-right: 3%;
+    }
+    
+    .sports .col2 {
+        margin-right: 3%;
+    }
+    
+    .accessories .col1 {
+        margin-right: 3%;
+    }
+    
+    .accessories .new-tittle {
+        color: black;
+    }
+    
+    .tn .new-tittle {
+        color: black;
     }
     /* navgiation 2  code closing */
     /* Navigation 3 code starting */

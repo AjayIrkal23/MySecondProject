@@ -322,6 +322,18 @@
         visibility: visible
     }
     
+    .facebody:hover .menu {
+        visibility: visible
+    }
+    
+    .brands:hover .menu {
+        visibility: visible
+    }
+    
+    .outlets:hover .menu {
+        visibility: visible
+    }
+    
     .newin .menu {
         left: -45px;
     }
@@ -352,6 +364,18 @@
     
     .topshop .menu {
         left: -660px;
+    }
+    
+    .facebody .menu {
+        left: -730px;
+    }
+    
+    .brands .menu {
+        left: -830px;
+    }
+    
+    .outlets .menu {
+        left: -930px;
     }
     
     .menu-tittle {
@@ -580,6 +604,8 @@
         color: white;
         font-size: 1rem;
         text-decoration: none;
+        position: relative;
+        bottom: 15px;
     }
     
     .item-sec .last-col {
@@ -641,6 +667,37 @@
     
     .tn .new-tittle {
         color: black;
+    }
+    
+    .topshop .col3 {
+        width: 20%;
+        border: none;
+    }
+    
+    .topshop .col-3-1 {
+        border: none;
+    }
+    
+    .topshop .new-tittle {
+        color: black;
+    }
+    
+    .facebody .col2 {
+        margin-right: 2%;
+    }
+    
+    .facebody .text-inside {
+        top: 50%;
+    }
+    
+    .brands .col2 {
+        margin-right: 3%;
+        border-right: 1px solid #dfdfdf;
+    }
+    
+    .outlets .col2 {
+        margin-right: 3%;
+        border-right: 1px solid #dfdfdf;
     }
     /* navgiation 2  code closing */
     /* Navigation 3 code starting */

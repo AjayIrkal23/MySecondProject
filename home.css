@@ -699,6 +699,20 @@
         margin-right: 3%;
         border-right: 1px solid #dfdfdf;
     }
+    
+    .text-inside {
+        text-transform: uppercase;
+        left: 20px;
+    }
+    
+    .outlets .text-inside {
+        top: 40%;
+    }
+    
+    .brands .text-inside {
+        left: 30px;
+        letter-spacing: 1px;
+    }
     /* navgiation 2  code closing */
     /* Navigation 3 code starting */
     

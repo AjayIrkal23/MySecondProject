@@ -9,6 +9,7 @@
     
     .menu {
         cursor: pointer;
+        z-index: 1;
     }
     /* Header/Navigation */
     
@@ -292,6 +293,7 @@
         top: 100%;
         z-index: 1;
         visibility: hidden;
+        box-shadow: 2.5px 100.5px 500px rgb(10, 40, 54);
     }
     
     .hot:hover .menu {
@@ -840,6 +842,55 @@
     
     .body-cont {
         min-height: calc(100vh - 65px - 45px - 7vh - 20vh - 180px);
+    }
+    
+    .body-cont {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .img-cont {
+        margin-top: 3.5%;
+        margin-bottom: 3.5%;
+        position: relative;
+    }
+    
+    .img-fluid {
+        position: relative;
+        z-index: -1;
+    }
+    
+    .poolside-daze-tittle {
+        position: absolute;
+        bottom: 20%;
+        right: 35%;
+        text-align: center;
+        background-color: #fff;
+        display: inline-block;
+        font-family: 'Acme', sans-serif;
+        color: black;
+        font-size: 3.5rem;
+        letter-spacing: 5px;
+        padding: 0.1% 1%;
+    }
+    
+    .poolside-daze-button {
+        position: absolute;
+        bottom: 6%;
+        right: 42%;
+        text-align: center;
+        background-color: #fff;
+        display: inline-block;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        color: black;
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    
+    .poolside-daze-button:hover {
+        color: white;
+        background-color: black
     }
     /* footer-section */
     

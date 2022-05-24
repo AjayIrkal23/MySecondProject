@@ -1004,6 +1004,29 @@
         padding: 2% 0;
         text-transform: uppercase;
     }
+    
+    .tittle-trending {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        text-align: center;
+        margin-bottom: 3%;
+    }
+    
+    .b4 .b2-flex-item {
+        width: 12.5%;
+        transition: opacity 0.9s ease;
+    }
+    
+    .b4:hover .b2-flex-item {
+        opacity: 30%;
+    }
+    
+    .b4 .b2-flex-item:hover {
+        opacity: 100%;
+        transform: scale(1.10);
+    }
     /* footer-section */
     
     .footer-sec {

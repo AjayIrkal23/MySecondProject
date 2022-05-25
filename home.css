@@ -924,8 +924,8 @@
     
     .poolside-daze-button {
         position: absolute;
-        bottom: 6%;
-        right: 42%;
+        right: 43%;
+        top: 100%;
         text-align: center;
         background-color: #fff;
         display: inline-block;
@@ -1081,6 +1081,11 @@
         align-items: center;
         background-color: black;
         color: white;
+    }
+    
+    .men-row1 p {
+        color: black;
+        background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 97.3%, .8));
     }
     
     .men-free-dev p {}

@@ -1083,11 +1083,6 @@
         color: white;
     }
     
-    .men-row1 p {
-        color: black;
-        background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 97.3%, .8));
-    }
-    
     .men-free-dev p {}
     /* footer-section */
     

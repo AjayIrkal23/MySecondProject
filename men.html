@@ -29,10 +29,25 @@
 
 
 
-    <body>
+    <script>
+        function Darkmode() {
+            var element = document.getElementById("body-dark");
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+
+
+
+    <body id="body-dark">
         <header>
             <div class="help-faq">
 
+                <div class="help-sec">
+                    <button class="btn btn-outline-success btn-sm">Support</button>
+                </div>
+                <div class="dark-mode-sec">
+                    <button onclick="Darkmode()" class="btn btn-outline-dark btn-sm">Dark-Mode</button>
+                </div>
             </div>
             <nav class="nav1">
                 <div class="flex-item nav-brand">
@@ -40,10 +55,12 @@
                 </div>
                 <a class="women" href="index.html">
                 Women
+
             </a>
                 <a class="Men" href="men.html">
             Men
             </a>
+
 
 
                 <div class="input-group searchbar">
@@ -1211,6 +1228,38 @@
             </nav>
 
 
+            <script>
+                function coupon_function() {
+                    var element = document.getElementById("toggle-coupon");
+                    element.classList.toggle("coupon-hidden");
+                }
+            </script>
+
+            <style>
+                .coupon-itm {
+                    background-image: url(images/men-banner.jpg);
+                    width: 550px;
+                    height: 72%;
+                    background-size: cover;
+                }
+            </style>
+
+
+
+            </nav>
+
+
+
+            <div class="coupon" id="toggle-coupon">
+                <div class="coupon-itm">
+                    <button onclick="coupon_function()" class="btn btn-outline-dark btn-sm btn-close-wind"><i class="fa-solid fa-xmark"></i></button>
+
+                </div>
+
+
+
+
+            </div>
 
 
             <div class="flex-container ">

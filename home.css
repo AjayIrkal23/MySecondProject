@@ -18,9 +18,19 @@
     /* Header/Navigation */
     
     .help-faq {
-        height: 30px;
+        display: flex;
+        width: 100%;
         background-color: #f8f8f8;
-        ;
+        margin: 0.25% 0;
+        justify-content: flex-end;
+    }
+    
+    .dark-mode-sec {
+        margin-right: 1%;
+    }
+    
+    .help-sec {
+        margin-right: 1%;
     }
     /* navigation bar 1 */
     
@@ -96,7 +106,7 @@
     
     .collapse {
         position: absolute;
-        top: 20%;
+        top: 15%;
         right: 5%;
         z-index: 1;
     }
@@ -1089,7 +1099,39 @@
         color: white;
     }
     
-    .men-free-dev p {}
+    .dark-mode {
+        background-color: #2d2d2d;
+        color: white
+    }
+    
+    .coupon {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .coupon-itm {
+        position: fixed;
+        z-index: 10;
+        border-radius: 1.5%;
+        background-repeat: no-repeat;
+        box-shadow: 50px 100.5px 500px rgb(10, 40, 54);
+    }
+    
+    .coupon-hidden {
+        visibility: hidden;
+    }
+    
+    .fa-xmark {
+        font-size: 0.8rem;
+    }
+    
+    .btn-close-wind {
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        position: absolute;
+        right: 0.5%;
+        top: 0.5%;
+    }
     /* footer-section */
     
     .footer-sec {

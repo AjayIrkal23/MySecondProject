@@ -28,12 +28,25 @@
     </head>
 
 
+    <script>
+        function Darkmode() {
+            var element = document.getElementById("body-dark");
+            element.classList.toggle("dark-mode");
+        }
+    </script>
 
 
-    <body>
+
+    <body id="body-dark">
         <header>
             <div class="help-faq">
 
+                <div class="help-sec">
+                    <button class="btn btn-outline-success btn-sm">Support</button>
+                </div>
+                <div class="dark-mode-sec">
+                    <button onclick="Darkmode()" class="btn btn-outline-dark btn-sm">Dark-Mode</button>
+                </div>
             </div>
             <nav class="nav1">
                 <div class="flex-item nav-brand">
@@ -41,6 +54,7 @@
                 </div>
                 <a class="women" href="">
                 Women
+
             </a>
                 <a class="Men" href="men.html">
             Men
@@ -1195,13 +1209,39 @@
 
 
 
+            <script>
+                function coupon_function() {
+                    var element = document.getElementById("toggle-coupon");
+                    element.classList.toggle("coupon-hidden");
+                }
+            </script>
 
-
-
+            <style>
+                .coupon-itm {
+                    background-image: url(images/Top-Carousal-Juniper-Web.jpg);
+                    width: 60%;
+                    height: 40%;
+                    background-size: contain;
+                }
+            </style>
 
 
 
             </nav>
+
+
+
+            <div class="coupon" id="toggle-coupon">
+                <div class="coupon-itm">
+                    <button onclick="coupon_function()" class="btn btn-outline-dark btn-sm btn-close-wind"><i class="fa-solid fa-xmark"></i></button>
+
+                </div>
+
+
+
+
+            </div>
+
 
 
 
@@ -1234,6 +1274,8 @@
                 </div>
 
         </header>
+
+
         <div class="body-cont container-fluid justify-content-center ">
             <a class="body-p1" href="">
                 <div class="img-cont">

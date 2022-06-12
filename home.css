@@ -100,6 +100,10 @@
         margin: 0 40%;
     }
     
+    .account:hover {
+        background-color: #505050;
+    }
+    
     .head:hover {
         color: rgb(51, 185, 218);
     }
@@ -277,6 +281,19 @@
     .nav2 .items {
         padding-right: 1%;
         padding-left: 1%;
+    }
+    
+    .account-drop {
+        position: absolute;
+        width: 17%;
+        right: 2%;
+        z-index: 50000;
+        visibility: hidden;
+        padding-top: 0.5%;
+    }
+    
+    .account-hover:hover .account-drop {
+        visibility: visible;
     }
     
     .nav2 div {

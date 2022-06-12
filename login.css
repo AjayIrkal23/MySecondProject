@@ -1,3 +1,113 @@
 .body {
     background-color: #eeeeee;
 }
+
+.login-brand-tittle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.3rem;
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 1.5%;
+}
+
+.main-sec {
+    background-color: #ffffff;
+    max-width: 50vw;
+    min-width: 42vw;
+    margin: auto auto;
+    position: relative;
+}
+
+.login-signup-flex {
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2%;
+}
+
+.join,
+.login {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #767676;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1px;
+}
+
+.hr-logsig {
+    margin: 0 5%;
+    margin-bottom: 4%;
+}
+
+.join:hover,
+.login:hover {
+    color: #ababab
+}
+
+.join {
+    margin-left: 50px;
+}
+
+.login {
+    margin-right: 50px;
+}
+
+.mb-3 {
+    margin-left: 22.5%;
+    margin-right: 22.5%;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    color: #767676;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+.lable {
+    margin-bottom: 2%;
+}
+
+.form-control {
+    border: 1.2px solid black;
+    line-height: 2.25;
+    margin-bottom: 5%;
+}
+
+.login-btn {
+    margin-left: 22.5%;
+    margin-right: 22.5%;
+    margin-bottom: 4%;
+}
+
+.btn-dark:hover {
+    background-color: #414141;
+}
+
+.btn-dark {
+    line-height: 2;
+    border-radius: 2%;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 2px;
+}
+
+.forget-pass {
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+}
+
+.pass-sec {
+    margin-top: 4%;
+}
+
+.pass-sec p {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}

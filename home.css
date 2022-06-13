@@ -26,7 +26,9 @@
     }
     
     .dark-mode-sec {
-        margin-right: 1%;
+        margin-right: 2%;
+        display: flex;
+        align-items: center;
     }
     
     .help-sec {
@@ -1119,6 +1121,10 @@
     .dark-mode {
         background-color: #2d2d2d;
         color: white
+    }
+    
+    .dark-mode-btn {
+        color: #0770cf;
     }
     
     .coupon {

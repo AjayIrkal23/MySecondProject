@@ -31,7 +31,9 @@
     <script>
         function Darkmode() {
             var element = document.getElementById("body-dark");
+            var element2 = document.getElementById("body-dark-flex");
             element.classList.toggle("dark-mode");
+
         }
     </script>
 
@@ -1300,7 +1302,7 @@
 
             </div>
             <div>
-                <div class="body-p2-flex">
+                <div class="body-p2-flex" id="body-dark-flex">
                     <div class="b2-flex-item">
                         <a href="">
                             <img class="b2-img img-fluid" src="https://content.asos-media.com/-/media/homepages/ww/2022/may/09-gbl/moments/gbl/ww_gbl_summer_dresses_occasion_moment_870x1110.jpg" alt="">
@@ -1335,7 +1337,7 @@
                     <p class="subtittle">Limited time only. Selected styles marked down as shown. </p>
 
                 </div>
-                <div class="body-p2-flex">
+                <div class="body-p2-flex" id="body-dark-flex">
                     <div class="b2-flex-item ">
                         <a href="">
                             <img class="b2-img img-fluid no-border" src="https://content.asos-media.com/-/media/homepages/ww/2022/may/23-asos-brands/day-1-asos-design-ww-cat-trays---blue/cat-tray-images-with-border-day-1-asos-design-ww-4-870x1110.jpg" alt="">
@@ -1373,7 +1375,7 @@
                     <p class="subtittle">Limited time only. Selected styles marked down as shown. </p>
 
                 </div>
-                <div class="body-p2-flex b3">
+                <div class="body-p2-flex b3" id="body-dark-flex">
                     <div class="b2-flex-item ">
                         <a href="">
                             <img class="b2-img img-fluid no-border" src="https://content.asos-media.com/-/media/homepages/ww/2022/may/23-gbl/moments/wwfb-vita-liberata-eu-row-moment870x1110.jpg" alt="">
@@ -1399,8 +1401,8 @@
 
                 </div>
                 <div>
-                    <p class="tittle-trending">Trending Brands</p>
-                    <div class="body-p2-flex b4">
+                    <p class="tittle-trending">Trending Brands </p>
+                    <div class="body-p2-flex b4" id="body-dark-flex">
                         <div class="b2-flex-item ">
                             <a href="">
                                 <img class="b2-img img-fluid no-border" src="images/brand1.png" alt="">
@@ -1436,7 +1438,7 @@
                     </div>
                 </div>
                 <hr class="hr-1">
-                <div class="body-p2-flex b5">
+                <div class="body-p2-flex b5" id="body-dark-flex">
                     <div class="b2-flex-item s ">
                         <a href="">
                             <img class="b2-img img-fluid no-border r" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='30' width='30'%3E%3Cpath d='M15 30C6.716 30 0 23.284 0 15 0 6.716 6.716 0 15 0c8.284 0 15 6.716 15 15 0 8.284-6.716 15-15 15zm6.075-21.75H8.925c-.341 0-.675.334-.675.675v12.15c0 .341.333.675.675.675H15v-5.4h-1.35v-2.025H15v-1.35c.46-1.737 1.526-2.686 2.7-2.7 1.126.014 1.767.07 2.025 0V12.3h-1.35c-.646-.108-.81.294-1.35.675v1.35h2.7l-.675 2.025h-2.025v5.4h4.05c.341 0 .675-.334.675-.675V8.925c0-.341-.334-.675-.675-.675z' fill='%233C5A99' fill-rule='evenodd'/%3E%3C/svg%3E"
@@ -1522,8 +1524,50 @@
                         <p class=""><span>Your In :</span>
                             <span><img class="btn btn-outline-light cont-btn" src="https://assets.asosservices.com/storesa/images/flags/in.png" alt="">
                         </p>
+                        <p>City : <span id="city"></span></p>
+                        <p>Weather : <span id="weather"></span></p>
 
                     </div>
+
+
+                    <script>
+                        let x = document.getElementById('city');
+                        let y = document.getElementById('weather');
+
+                        function geolocation() {
+                            if (navigator.geolocation) {
+                                navigator.geolocation.getCurrentPosition(showPosition)
+                            } else {
+                                x.innerText = "Geo Not Supported"
+                            }
+                        }
+
+                        function showPosition(data) {
+                            console.log(data)
+                            let latitude = data.coords.latitude;
+                            let longitude = data.coords.longitude;
+                            const url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${latitude}&lon=${longitude}&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`
+                                //api calling
+                            fetch(url, {
+                                    method: 'GET'
+                                })
+                                //return promise
+                                .then((res) => res.json())
+                                // resolve promise
+                                .then((data) => {
+                                    console.log(data)
+                                    let cityName = data.city.name
+                                    let temp = data.list[0].temp.day
+                                    x.innerText = cityName
+                                    y.innerText = `${temp}°C `
+                                })
+
+
+                        }
+                    </script>
+                    <script>
+                        window.onload = geolocation()
+                    </script>
                 </div>
             </div>
             <div class="footer-sec2 ">

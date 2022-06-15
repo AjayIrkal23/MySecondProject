@@ -48,22 +48,24 @@
         </div>
         <hr class="hr-logsig">
 
-        <div>
+        <div class="password">
             <div class=" mb-3 ">
                 <label for="exampleFormControlInput1 " class="form-label lable ">Email Address :</label>
-                <input type="email " class="form-control " id="exampleFormControlInput1 " placeholder=" ">
+                <input type="email " class="form-control " id="exampleFormControlInput1 input-email" placeholder=" Enter your email address ">
+                <p class="correct-email-alert"></p>
             </div>
         </div>
-        <div>
+
+        <div class="password">
             <div class=" mb-3 ">
                 <label for="exampleFormControlInput1 " class="form-label lable ">password :</label>
-                <input type="email " class="form-control " id="exampleFormControlInput1 " placeholder=" ">
+                <input type="email " class="form-control " id="exampleFormControlInput1 " placeholder=" Enter Your Password  ">
             </div>
         </div>
 
 
         <div class="d-grid gap-2 login-btn">
-            <button class="btn btn-dark " type="button">SIGN IN</button>
+            <button class="btn btn-dark " onclick="check_valid_email()" type="button">SIGN IN</button>
 
         </div>
         <div>

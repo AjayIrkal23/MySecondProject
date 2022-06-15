@@ -1137,7 +1137,7 @@
         z-index: 10;
         border-radius: 1.5%;
         background-repeat: no-repeat;
-        box-shadow: 50px 100.5px 500px rgb(10, 40, 54);
+        background-size: contain;
     }
     
     .coupon-hidden {
@@ -1221,4 +1221,8 @@
         width: 20%;
         padding: 0px;
         border-radius: 50%;
+    }
+    
+    #body-dark-flex-col {
+        color: white;
     }

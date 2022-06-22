@@ -32,10 +32,41 @@
     <script>
         function Darkmode() {
             var element = document.getElementById("body-dark");
+            var element2 = document.getElementById("body-dark-flex");
+            var element3 = document.getElementById("body-dark-flex2");
+            var element4 = document.getElementById("body-dark-flex3");
+            var element5 = document.getElementById("light2");
+            var element6 = document.getElementById("light");
+            var element7 = document.getElementById("body-dark-flex10");
             element.classList.toggle("dark-mode");
+            element2.classList.toggle("dark-mode-col");
+            element3.classList.toggle("dark-mode-col");
+            element4.classList.toggle("dark-mode-col");
+            element5.classList.toggle("btn-outline-light");
+            element6.classList.toggle("btn-outline-light");
+            element7.classList.toggle("dark-mode-col-img");
+            const list = element5.classList;
+            list.remove("btn-outline-dark");
+            const list1 = element6.classList;
+            list1.remove("btn-outline-dark");
+
+
+
+
+
+
         }
     </script>
 
+    <style>
+        .coupon-itm {
+            background-size: contain;
+        }
+        
+        .coupon-itm img {
+            height: 500px;
+        }
+    </style>
 
 
     <body id="body-dark">
@@ -1239,13 +1270,7 @@
                 }
             </script>
 
-            <style>
-                .coupon-itm {
-                    background-image: url(images/men-banner.jpg);
-                    width: 550px;
-                    height: 72%;
-                }
-            </style>
+
 
 
 
@@ -1255,6 +1280,7 @@
 
             <div class="coupon" id="toggle-coupon">
                 <div class="coupon-itm">
+                    <img src="images/men-banner.jpg" alt="">
                     <button onclick="coupon_function()" class="btn btn-outline-dark btn-sm btn-close-wind"><i class="fa-solid fa-xmark"></i></button>
 
                 </div>
@@ -1309,7 +1335,7 @@
 
         </div>
         <div>
-            <div class="body-p2-flex ">
+            <div class="body-p2-flex  " id="body-dark-flex">
                 <div class="b2-flex-item ">
                     <a href=" ">
                         <img class="b2-img img-fluid " src="https://content.asos-media.com/-/media/homepages/mw/2022/may/23-gbl/moments/mw_fred_perry_polo_moment_870x1110.jpg " alt=" ">
@@ -1351,7 +1377,7 @@
                 <p class="subtittle ">Limited time only. Selected styles marked down as shown. </p>
 
             </div>
-            <div class="body-p2-flex ">
+            <div class="body-p2-flex " id="body-dark-flex2">
                 <div class="b2-flex-item ">
                     <a href=" ">
                         <img class="b2-img img-fluid no-border " src="//images.asos-media.com/products/topman-super-skinny-textured-suit-trousers-in-black/201500709-1-black?$n_480w$&wid=476&fit=constrain " alt=" ">
@@ -1389,7 +1415,7 @@
                 <p class="subtittle ">Limited time only. Selected styles marked down as shown. </p>
 
             </div>
-            <div class="body-p2-flex b3 ">
+            <div class="body-p2-flex b3 " id="body-dark-flex3">
                 <div class="b2-flex-item ">
                     <a href=" ">
                         <img class="b2-img img-fluid no-border " src="https://content.asos-media.com/-/media/homepages/mw/2022/may/23-gbl/moments/mw_gbl_ad_craftwerk_boarder_moment_870x1110.jpg " alt=" ">
@@ -1398,7 +1424,7 @@
                                 VITA LIBERATA
                             </p>
                             <p class="subtittle "> Your bronzed bod awaits</p>
-                            <button class="btn btn-outline-dark ">Shop The Brand</button></div>
+                            <button id="light2" class="btn btn-outline-dark ">Shop The Brand</button></div>
                     </a>
                 </div>
                 <div class="b2-flex-item ">
@@ -1408,13 +1434,13 @@
                                 BEACH BABE
                             </p>
                             <p class="subtittle "> Swim things from Mercy's DESIGN</p>
-                            <button class="btn btn-outline-dark ">Shop Now</button></div>
+                            <button id="light" class="btn btn-outline-dark ">Shop Now</button></div>
                     </a>
                 </div>
 
 
             </div>
-            <div>
+            <div id="body-dark-flex10">
                 <p class="tittle-trending">Trending Brands</p>
                 <div class="body-p2-flex b4">
                     <div class="b2-flex-item ">
@@ -1563,20 +1589,20 @@
                             let latitude = data.coords.latitude;
                             let longitude = data.coords.longitude;
                             const url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${latitude}&lon=${longitude}&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`
-                                //api calling
+
                             fetch(url, {
-                                    method: 'GET'
-                                })
-                                //return promise
-                                .then((res) => res.json())
-                                // resolve promise
-                                .then((data) => {
-                                    console.log(data)
-                                    let cityName = data.city.name
-                                    let temp = data.list[0].temp.day
-                                    x.innerText = cityName
-                                    y.innerText = `${temp}°C `
-                                })
+                                method: 'GET'
+                            })
+
+                            .then((res) => res.json())
+
+                            .then((data) => {
+                                console.log(data)
+                                let cityName = data.city.name
+                                let temp = data.list[0].temp.day
+                                x.innerText = cityName
+                                y.innerText = `${temp}°C `
+                            })
 
 
                         }

@@ -72,6 +72,22 @@
     <body id="body-dark">
         <header>
             <div class="help-faq">
+                <div class="time-date">
+                    <p id="time-text"></p>
+                </div>
+
+                <script>
+                    let fun = (function() {
+                        setInterval(() => {
+                            date = new Date().toLocaleString();
+                            document.getElementById("time-text").innerText = date;
+                        }, 1000)
+                    })
+                </script>
+
+
+
+
 
                 <div class="help-sec">
                     <button class="btn btn-outline-success btn-sm">Support</button>
@@ -1609,6 +1625,7 @@
                     </script>
                     <script>
                         window.onload = geolocation()
+                        window.onload = fun()
                     </script>
                 </div>
             </div>

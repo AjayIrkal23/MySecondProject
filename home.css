@@ -1136,8 +1136,18 @@
         color: white;
     }
     
+    @keyframes darkmode-animate {
+        from {
+            background-color: white;
+        }
+        to {
+            background-color: black;
+        }
+    }
+    
     .dark-mode {
         background-color: black;
+        animation: darkmode-animate 1s;
         color: white
     }
     

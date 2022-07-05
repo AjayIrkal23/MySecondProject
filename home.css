@@ -1151,8 +1151,23 @@
         color: white
     }
     
+    .dynamic-list h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 2%;
+    }
+    
     .dark-mode-btn {
         color: #0770cf;
+    }
+    
+    .select {
+        background-color: white;
+        width: 50%;
+        height: 30px;
+        border-radius: 4%;
+        font-size: 1rem;
     }
     
     .coupon {

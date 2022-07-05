@@ -21,11 +21,13 @@
         <link rel="icon" href="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c7b15611695225.57a06a4485387.jpg">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="index.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Cairo&family=Fjalla+One&display=swap" rel="stylesheet">
         <title>Mercys</title>
 
 
     </head>
+
 
 
     <script>
@@ -1487,7 +1489,31 @@
 
                     </div>
                 </div>
+                <section>
+                    <div class="dynamic-list">
+                        <h1>Shop By Your Choice </h1>
+                    </div>
+                    <div class="row text-center justify-content-center">
+                        <div class="col-lg-5">
+                            <div class="dropdown"> <label for="cars">Choose a Category:</label>
+                                <select class="select" name="cars" id="cat-op" onChange="getRest()">
+                                <option>Select a Category</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="dropdown"> <label for="cars">Choose a Dress:</label>
+                                <select class="select restSelect" name="cars2" id="dresses">
+                                    <option>Select a dress</option>
+                                </select>
+                            </div>
+                        </div>
+                </section>
 
+
+                <script>
+                    window.onload = getCity()
+                </script>
 
                 <hr class="hr-1">
                 <div class="body-p2-flex b5" id="body-dark-flex">
@@ -1542,114 +1568,115 @@
 
 
 
+                </div>
+
+
+
+
+
             </div>
-
-
-
-
-        </div>
-        <footer>
-            <div class="footer-sec ">
-                <div class="footer-flex">
-                    <div class="flex-items">
-                        <p class="tittle">Help & Information</p>
-                        <p class="">Help</p>
-                        <p class="">Track order</p>
-                        <p class="">Delivery & returns</p>
-                    </div>
-                    <div class="flex-items">
-                        <p class="tittle">About Mercy</p>
-                        <p class="">About us</p>
-                        <p class="">Careers at Mercy</p>
-                        <p class="">Corporate responsibility</p>
-                        <p class="">Investors' site</p>
-                    </div>
-                    <div class="flex-items">
-                        <p class="tittle">More From Mercy</p>
-                        <p class="">Mobile and Mercy's apps</p>
-                        <p class="">Mercy's Marketplace</p>
-                        <p class="">Gift vouchers</p>
-                        <p class="">Black Friday</p>
-                    </div>
-                    <div class="flex-items">
-                        <p class="tittle">Shopping from:</p>
-                        <p class=""><span>Your In :</span>
-                            <span><img class="btn btn-outline-light cont-btn" src="https://assets.asosservices.com/storesa/images/flags/in.png" alt="">
+            <footer>
+                <div class="footer-sec ">
+                    <div class="footer-flex">
+                        <div class="flex-items">
+                            <p class="tittle">Help & Information</p>
+                            <p class="">Help</p>
+                            <p class="">Track order</p>
+                            <p class="">Delivery & returns</p>
+                        </div>
+                        <div class="flex-items">
+                            <p class="tittle">About Mercy</p>
+                            <p class="">About us</p>
+                            <p class="">Careers at Mercy</p>
+                            <p class="">Corporate responsibility</p>
+                            <p class="">Investors' site</p>
+                        </div>
+                        <div class="flex-items">
+                            <p class="tittle">More From Mercy</p>
+                            <p class="">Mobile and Mercy's apps</p>
+                            <p class="">Mercy's Marketplace</p>
+                            <p class="">Gift vouchers</p>
+                            <p class="">Black Friday</p>
+                        </div>
+                        <div class="flex-items">
+                            <p class="tittle">Shopping from:</p>
+                            <p class=""><span>Your In :</span>
+                                <span><img class="btn btn-outline-light cont-btn" src="https://assets.asosservices.com/storesa/images/flags/in.png" alt="">
                         </p>
                         <p>City : <span id="city"></span></p>
-                        <p>Weather : <span id="weather"></span></p>
+                            <p>Weather : <span id="weather"></span></p>
 
-                    </div>
+                        </div>
 
 
-                    <script>
-                        let x = document.getElementById('city');
-                        let y = document.getElementById('weather');
+                        <script>
+                            let x = document.getElementById('city');
+                            let y = document.getElementById('weather');
 
-                        function geolocation() {
-                            if (navigator.geolocation) {
-                                navigator.geolocation.getCurrentPosition(showPosition)
-                            } else {
-                                x.innerText = "Geo Not Supported"
+                            function geolocation() {
+                                if (navigator.geolocation) {
+                                    navigator.geolocation.getCurrentPosition(showPosition)
+                                } else {
+                                    x.innerText = "Geo Not Supported"
+                                }
                             }
-                        }
 
-                        function showPosition(data) {
-                            console.log(data)
-                            let latitude = data.coords.latitude;
-                            let longitude = data.coords.longitude;
-                            const url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${latitude}&lon=${longitude}&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`
-
-                            fetch(url, {
-                                method: 'GET'
-                            })
-
-                            .then((res) => res.json())
-
-                            .then((data) => {
+                            function showPosition(data) {
                                 console.log(data)
-                                let cityName = data.city.name
-                                let temp = data.list[0].temp.day
-                                x.innerText = cityName
-                                y.innerText = `${temp}°C `
-                            })
+                                let latitude = data.coords.latitude;
+                                let longitude = data.coords.longitude;
+                                const url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${latitude}&lon=${longitude}&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`
+
+                                fetch(url, {
+                                    method: 'GET'
+                                })
+
+                                .then((res) => res.json())
+
+                                .then((data) => {
+                                    console.log(data)
+                                    let cityName = data.city.name
+                                    let temp = data.list[0].temp.day
+                                    x.innerText = cityName
+                                    y.innerText = `${temp}°C `
+                                })
 
 
-                        }
-                    </script>
-                    <script>
-                        window.onload = geolocation()
-                        window.onload = fun()
-                    </script>
-                </div>
-            </div>
-            <div class="footer-sec2 ">
-                <div class="flex-footer">
-                    <div class="copy-right">
-                        <a href="">
-                            <p><span class="letter-spacing">@</span>2022 Mercy</p>
-                        </a>
-                    </div>
-                    <div class="part-2">
-                        <a href="">
-                            <p>Privacy & Cookies</p>
-                        </a>
-                    </div>
-                    <span class="vr"></span>
-                    <div class="part-2">
-                        <a href="">
-                            <p>Ts&Cs</p>
-                        </a>
-                    </div>
-                    <span class="vr"></span>
-                    <div class="part-2">
-                        <a href="">
-                            <p>Accessibility</p>
-                        </a>
+                            }
+                        </script>
+                        <script>
+                            window.onload = geolocation()
+                            window.onload = fun()
+                        </script>
                     </div>
                 </div>
-            </div>
-        </footer>
+                <div class="footer-sec2 ">
+                    <div class="flex-footer">
+                        <div class="copy-right">
+                            <a href="">
+                                <p><span class="letter-spacing">@</span>2022 Mercy</p>
+                            </a>
+                        </div>
+                        <div class="part-2">
+                            <a href="">
+                                <p>Privacy & Cookies</p>
+                            </a>
+                        </div>
+                        <span class="vr"></span>
+                        <div class="part-2">
+                            <a href="">
+                                <p>Ts&Cs</p>
+                            </a>
+                        </div>
+                        <span class="vr"></span>
+                        <div class="part-2">
+                            <a href="">
+                                <p>Accessibility</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
     </body>
 
 </html>

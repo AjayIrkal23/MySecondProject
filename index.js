@@ -23,13 +23,19 @@ const getRest = async() => {
     while (dresses.length > 0) {
         dresses.remove(0)
     }
-    let response = await fetch(`${dress_url} `, {
+    let response = await fetch(`${dress_url}`, {
         method: 'GET'
     })
     let data = await response.json()
-    data.map((item) => {
+    let data2 = data.filter((current_element) => {
+        if (dressid == current_element.product_id) {
+            return current_element
+        }
+    })
+
+    data2.map((item) => {
         let element = document.createElement('option')
-        let text = document.createTextNode(`${item.Name} | ${item.Price}`)
+        let text = document.createTextNode(`${ item.Name } | ${ item.Price }`)
         element.appendChild(text)
         dresses.appendChild(element)
     })

@@ -1,0 +1,30 @@
+{
+    "name": "mysecondproject",
+    "version": "1.0.0",
+    "description": "e-comsite",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js",
+        "dev": "nodemon app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AjayIrkal23/MySecondProject.git"
+    },
+    "author": "AjayIrkal@mercy",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/AjayIrkal23/MySecondProject/issues"
+    },
+    "homepage": "https://github.com/AjayIrkal23/MySecondProject#readme",
+    "dependencies": {
+        "body-parser": "^1.20.0",
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.1",
+        "express": "^4.18.1",
+        "mongodb": "^4.7.0",
+        "morgan": "^1.10.0",
+        "nodemon": "^2.0.19"
+    }
+}
